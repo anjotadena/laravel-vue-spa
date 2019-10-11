@@ -1,13 +1,19 @@
 <template>
-    <div>
-        <div id="main">
-            <Header />
-        </div>
-        <div class="content">
-            <router-view></router-view>
+    <div class="bg-light">
+        <div class="container mx-auto">
+            <!-- <Header /> -->
+            <div class="">
+                <router-view></router-view>
+            </div>
         </div>
     </div>
 </template>
+
+<style lang="scss" scoped>
+    .bg-light {
+        background-color: #f7fafc;
+    }
+</style>
 
 <script>
 import Header from './../components/Header';

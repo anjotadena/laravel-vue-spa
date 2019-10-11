@@ -1,5 +1,5 @@
 import Home from './components/Home';
-import Login from './components/Login';
+import LoginMain from './pages/login/Main';
 
 export const routes = [
     {
@@ -11,6 +11,6 @@ export const routes = [
     },
     {
         path: '/login',
-        component: Login
+        component: LoginMain
     },
 ];

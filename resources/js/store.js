@@ -17,12 +17,10 @@ export default {
             state.authError = null;
         },
         loginSuccess(state, payload) {
-            console.log('PAYLOAD: ', payload);
             state.authError = null;
             state.isLoggedIn = true;
             state.loading = false;
             state.currentUser = Object.assign({}, payload.user, { token: payload.access_token });
-            console.log('HERE');
             localStorage.setItem("user", JSON.stringify(state.currentUser));
         },
         loginFailed(state, payload) {
